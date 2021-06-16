@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css1.css">
+    
+</head>
+<body>
+    <div class="main">
+        
+        <div class="leftbox">
+            <div class="inpbox">
+                <form>
+                    <div class="pr">
+                        <label>Production Rules : </label><br>
+                        <textarea id="z1" class="q1" type="textarea" cols="20" rows="10" placeholder="">S!->S&#13;&#10;S->A&#13;&#10;A->a</textarea>
+                    </div>
+                    <br>
+                    <div class="inp">
+                        <label>Input String : </label><br><br>
+                        <input id="z2" class="q2" type="text" name="z2" placeholder="Input String"></textarea>
+                    </div>
+                    <div class="button1">
+                        <input type="button" name="button2" id="button2" value="Generate" onclick="Generate()">
+                    </div>
+                </form>   
+            </div>
+            <div class="parser">
+                <div class="button2">
+                    <input type="button" name="ll0" id="ll0" class="button3" value="LL(0)" onclick="setzll0()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="ll1" id="ll1" class="button3" value="LL(1)" onclick="setzll1()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="lr0" id="lr0" class="button3" value="LR(0)" onclick="setzlr0()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="slr1" id="slr1" class="button3" value="SLR(1)" onclick="setzslr1()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="lr1" id="lr1" class="button3" value="LR(1)" onclick="setzlr1()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="clr1" id="clr1" class="button3" value="CLR(1)" onclick="setzclr1()">
+                </div>
+                <div class="button2">
+                    <input type="button" name="lalr1" id="lalr1" class="button3" value="LALR(1)" onclick="setzlalr1()">
+                </div>
+            </div>
+            <div class="instructions">
+                
+                <div class="instructionslist">
+                    <div class="instruction">The First rule must be 'S!->S'.</div>
+                    <div class="instruction">The second rule's LHS must be S.</div>
+                    <div class="instruction">Use '#' for epsilon.</div>
+                    <div class="instruction">Use ',' to seperate different productions within the same rule.</div>
+                </div>
+            </div>
+            <div style="margin:20px;color:white;font-size:20px;">
+                <p>Name : Karan.T</p>
+            </div>
+        
+        </div>
+        <div id="outbox">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src=java1.js></script>
+    <script type="text/javascript" src="/eel.js"></script>
+</body>
+</html>
